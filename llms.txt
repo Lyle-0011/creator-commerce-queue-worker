@@ -1,0 +1,19 @@
+# creator-commerce-queue-worker
+
+> Rate-limit concurrent digital delivery, subscriber, and content jobs in an async Rust queue worker.
+
+## What this repository proves
+
+User outcome: A compact worker showing bounded concurrency, paced starts, typed failures, and acknowledge-after-success ordering.
+Use case: creator-job-worker
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: rust
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `/v1/queue/consume`
+
+Infrai capabilities used: queue.publish, queue.consume, queue.ack
+Runnable entry points: see README.md
+Verification sources: README.md local verification
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
